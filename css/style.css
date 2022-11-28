@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+body{
+    background-color: #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Container-Pokedex{
+    width: 600px;
+    height: 600px;
+    background-color: #ef5350;
+    border-radius: 10px;
+}
+.Container-Pokedex .pokedex-titulo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Container-Pokedex .pokedex-titulo h2{
+    color: #fff;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.Container-Pokedex .pokedex-busca{
+    background-color: #A9A9A9;
+    height: 250px;
+    margin: 20px;
+
+}
+#pokemonResultado{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-resultado{
+    width: 90%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+    border-radius: 10px;
+}
+
+.card-resultado-dados{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.card-resultado-dados2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 130px;
+    margin: 10px 0;
+    
+    
+}
+
+.abilitys{
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    overflow-x: auto;
+}
+
+.moves{
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    overflow-x: auto;
+}
+.abilitys::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+    
+    
+}
+
+.abilitys::-webkit-scrollbar-track {
+    background: #A9A9A9;        /* color of the tracking area */
+    
+}
+
+.abilitys::-webkit-scrollbar-thumb {
+    background-color: #ef5350;;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+
+
+}
+
+.moves::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+    
+    
+}
+
+.moves::-webkit-scrollbar-track {
+    background: #A9A9A9;        /* color of the tracking area */
+    
+}
+
+.moves::-webkit-scrollbar-thumb {
+    background-color: #ef5350;;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+
+
+}
+.card-resultado-dados3{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 130px;
+}
+
+
+
+
+#pesquisa{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#pesquisa input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline-color: #ef5350;
+    
+}
+
+
+
+#pesquisa button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ef5350;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#pesquisa button:hover{
+    box-shadow: #ef5350 0px 0px 12px 1px inset,#ef5350 0px 0px 12px 1px;
+}
+.pokedex-box{
+    display: flex;
+    background-color: #A9A9A9;
+    margin-inline: 20px;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    border: 1px solid #FFF;
+    
+}
+
+.pokedex-box::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+    
+    
+}
+
+.pokedex-box::-webkit-scrollbar-track {
+    background: #A9A9A9;        /* color of the tracking area */
+    
+}
+
+.pokedex-box::-webkit-scrollbar-thumb {
+    background-color: #ef5350;;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+
+
+}
+
+.card-pokemon{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 150px;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+.card-pokemon p{
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+footer{
+    margin-top: 10px;
+}
+footer h1{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-bottom: 2px solid #fff;
+}

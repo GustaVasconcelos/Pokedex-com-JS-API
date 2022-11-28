@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="Container-Pokedex">
+        <div class="pokedex-titulo">
+            <h2>Pokedex</h2>
+        </div>
+        <div class="pokedex-busca">
+            <div id="pesquisa">
+                <input id='idPokemon'type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Insira o id" >
+                <button id="btnPesquisar">Pesquisar</button>
+            </div>
+            <div id="pokemonResultado">
+
+                
+            </div>
+            
+        </div>
+        <div class="pokedex-box">
+
+
+        </div>
+    </div>
+    <footer>
+        <H1>Espere api carregar(Pode demorar!)</H1>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>
